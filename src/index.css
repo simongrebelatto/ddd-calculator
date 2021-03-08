@@ -1,0 +1,156 @@
+/* Reset */
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-family: 'Dosis', sans-serif;
+}
+
+/* Centering */
+
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Main Container (full screen) */
+.main_container {
+  display: flex;
+  flex: 1;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./_images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Main container (for app section) */
+.app_container {
+  padding: 50px;
+  background-color: rgb(238, 238, 238);
+  border-radius: 20px;
+  box-shadow: 0px 0px 48px 10px #000;
+}
+
+/* Header */
+.main_header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+svg {
+  width: 54px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.main_container h1 {
+  font-size: 18pt;
+}
+
+/* Form */
+div.main_form {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.form_container {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+
+textarea:focus, input:focus, select:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+} 
+
+select#ddd_inf {
+  padding: 15px;
+  border-radius: 20px;
+  border: 1px solid #8c8c8c;
+}
+
+input.minutes_call {
+  padding: 15px;
+  border-radius: 20px;
+  border: 1px solid #8c8c8c;
+  margin-top: 10px;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none!important;
+}
+
+input.buttom_form {
+  padding: 15px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  margin-top: 10px;
+  background-color: #003e80;
+  color: #fff;
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+input.buttom_form:hover {
+  border: 1px solid #003e80;
+  background-color: #fff;
+  color: #003e80;
+}
+
+input.none {
+  display: none;
+}
+
+/* Table results */
+table {
+  margin-top: 20px;
+  border-radius: 20px;
+  background-color: #b3b3b3;
+  padding: 20px;
+  border-spacing: 10px;
+  border-collapse: inherit;
+}
+
+td, th {
+  text-align: center;
+}
+
+th, td {
+  border-left: 1px solid #dadada;
+  padding: 15px;
+}
+
+th:first-of-type, td:first-of-type {
+  border: none;
+}
+
+tr {
+  height: 30px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1280px) {
+  .app_container {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .form_container {
+    width: 100%;
+  }
+
+  .calculate_table {
+    overflow: auto;
+}
+
+}
